@@ -163,9 +163,10 @@ fviz_hmfa_ind <- function(X,  axes = c(1,2), geom=c("point", "text"), repel = FA
                                  colour = col.partial,
                                  shape = shape.ind, size = 1)
       # Partial segments
+      # FIX: ggplot2 3.4.0+ deprecation - size replaced with linewidth for geom_segment
       p <- p + ggpubr::geom_exec(geom_segment, data = ind.partial,
                                  x = "x", y = "y", xend = 'x.partial', yend = 'y.partial',
-                                 linetype = "group.name", colour = col.partial, size = 0.5)
+                                 linetype = "group.name", colour = col.partial, linewidth = 0.5)
     }
     # Edit plot title and legend title
     p <- p  + labs(colour = "Groups", linetype = "Groups")
