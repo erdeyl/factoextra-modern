@@ -16,7 +16,7 @@
   This affects: `fviz_dend.R`, `fviz_mclust.R`
 
 * **`size` aesthetic deprecation for lines** (Issue #191): Replaced `size`
-  with `linewidth` for line-based geoms (geom_path, geom_segment) as required
+  with `linewidth` for line-based geoms (geom_path, geom_segment, geom_rect) as required
   by ggplot2 3.4.0+.
   This affects: `fviz.R`, `fviz_dend.R`, `fviz_mfa.R`, `fviz_hmfa.R`
 

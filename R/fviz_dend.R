@@ -190,7 +190,7 @@ fviz_dend <- function(x, k = NULL, h = NULL, k_colors = NULL, palette = NULL,  s
   if(missing(lower_rect)) lower_rect = -(labels_track_height+0.5)
   if(rect){
     p <- p + .rect_dendrogram(dend, k = k, palette = rect_border, rect_fill = rect_fill,
-                              rect_lty = rect_lty, size = lwd, 
+                              rect_lty = rect_lty, linewidth = lwd, 
                               lower_rect = lower_rect)
   }
   
