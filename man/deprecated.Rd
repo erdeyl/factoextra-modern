@@ -64,7 +64,7 @@ Deprecated functions. Will be removed in a future version.
 \item get_mfa_group(). Deprecated. Use get_mfa_var(res.mfa, "group") instead.
 
 \item{fviz_mfa_ind_starplot(): Star graph of individuals (draws partial points).
-Deprecated. Use fviz_mfa_ind(res.mfa, partial = "All") instead.}
+Deprecated. Use fviz_mfa_ind(res.mfa, partial = "all") instead.}
 \item{fviz_mfa_quanti_var(): Graph of quantitative variables. Deprecated. Use fviz_mfa(X, "quanti.var") instead.}
 \item{fviz_mfa_quali_var(): Graph of qualitative variables. Deprecated. Use fviz_mfa(X, "quali.var") instead.}
 
