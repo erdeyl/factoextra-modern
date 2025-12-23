@@ -70,28 +70,28 @@ get_mfa_group <- function(res.mfa) {
 #' @rdname deprecated
 #' @export
 fviz_mfa_ind_starplot <- function(X, ...) {
-  .deprecate_warn("fviz_mfa_ind_starplot", "fviz_mfa_ind(res.mfa, partial = 'All')")
+  .deprecate_warn("fviz_mfa_ind_starplot", "fviz_mfa_ind(X, partial = 'all')")
   fviz_mfa_ind(X, partial = "all", ...)
 }
 
 #' @rdname deprecated
 #' @export
 fviz_mfa_group <- function(X, ...) {
-  .deprecate_warn("fviz_mfa_group", "fviz_mfa_var(res.mfa, 'group')")
+  .deprecate_warn("fviz_mfa_group", "fviz_mfa_var(X, 'group')")
   fviz_mfa_var(X, choice = "group", ...)
 }
 
 #' @rdname deprecated
 #' @export
 fviz_mfa_quanti_var <- function(X, ...) {
-  .deprecate_warn("fviz_mfa_quanti_var", "fviz_mfa_var(res.mfa, 'quanti.var')")
+  .deprecate_warn("fviz_mfa_quanti_var", "fviz_mfa_var(X, 'quanti.var')")
   fviz_mfa_var(X, choice = "quanti.var", ...)
 }
 
 #' @rdname deprecated
 #' @export
 fviz_mfa_quali_var <- function(X, ...) {
-  .deprecate_warn("fviz_mfa_quali_var", "fviz_mfa_var(res.mfa, 'quali.var')")
+  .deprecate_warn("fviz_mfa_quali_var", "fviz_mfa_var(X, 'quali.var')")
   fviz_mfa_var(X, choice = "quali.var", ...)
 }
 
