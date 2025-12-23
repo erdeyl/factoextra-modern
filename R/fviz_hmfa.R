@@ -52,9 +52,9 @@ NULL
 #'  "quali.var", "group") for plotting quantitative variables, qualitative 
 #'  variables and group of variables, respectively.
 #'@param ... Arguments to be passed to the function fviz() and ggpubr::ggpar()
-#'@param partial list of the individuals for which the partial points should be 
-#'  drawn. (by default, partial = NULL and no partial points are drawn). Use 
-#'  partial = "All" to visualize partial points for all individuals.
+#'@param partial list of the individuals for which the partial points should be
+#'  drawn. (by default, partial = NULL and no partial points are drawn). Use
+#'  partial = "all" to visualize partial points for all individuals.
 #'@param col.var.sup color for supplementary variables.
 #'@param repel a boolean, whether to use ggrepel to avoid overplotting text 
 #'  labels or not.
