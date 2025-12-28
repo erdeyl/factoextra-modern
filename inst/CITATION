@@ -1,18 +1,27 @@
-citHeader("To cite factoextra in publications use:")
+citHeader("To cite factoextra in publications, please use the original package citation:")
 
+# Primary citation - Original package
 bibentry(
   bibtype  = "Manual",
   title    = "factoextra: Extract and Visualize the Results of Multivariate Data Analyses",
   author   = c(person("Alboukadel", "Kassambara"),
                person("Fabian", "Mundt")),
   year     = "2020",
-  note     = "R package version 1.0.8. With contributions from Laszlo Erdey (Faculty of Economics and Business, University of Debrecen, Hungary)",
+  note     = "R package version 1.0.7",
   url      = "https://CRAN.R-project.org/package=factoextra",
   textVersion = paste(
     "Kassambara A, Mundt F (2020).",
     "factoextra: Extract and Visualize the Results of Multivariate Data Analyses.",
-    "R package version 1.0.8.",
-    "With contributions from Laszlo Erdey.",
+    "R package version 1.0.7.",
     "https://CRAN.R-project.org/package=factoextra."
   )
+)
+
+citFooter(
+  "Note: This is factoextra-modern, a temporary compatibility fork maintained by",
+  "Laszlo Erdey (Faculty of Economics and Business, University of Debrecen, Hungary).",
+  "This fork provides ggplot2 3.4.0+, tidyr 1.3.0+, and R 4.0+ compatibility fixes.",
+  "A pull request has been submitted to the original package (PR #194).",
+  "Once accepted, users should switch back to the official CRAN package.",
+  "Repository: https://github.com/erdeyl/factoextra-modern"
 )
