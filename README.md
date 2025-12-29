@@ -116,7 +116,7 @@ R package version 1.0.8. https://github.com/erdeyl/factoextra-modern
 
 - **Alboukadel Kassambara** - Original author and maintainer of factoextra
 - **Fabian Mundt** - Original co-author of factoextra
-- **Claude Code** - AI assistance in developing compatibility fixes
+- With the assistance of **Claude Code** in developing compatibility fixes
 
 ## Upstream Pull Request
 
