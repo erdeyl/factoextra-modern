@@ -9,7 +9,7 @@
 #'   visualization of PCA outputs from: i) prcomp and princomp [in built-in R 
 #'   stats], ii) PCA [in FactoMineR], iii) dudi.pca [in ade4] and epPCA 
 #'   [ExPosition]. Read more: 
-#'   \href{http://www.sthda.com/english/wiki/factominer-and-factoextra-principal-component-analysis-visualization-r-software-and-data-mining}{Principal
+#'   \href{https://www.sthda.com/english/wiki/factominer-and-factoextra-principal-component-analysis-visualization-r-software-and-data-mining}{Principal
 #'    Component Analysis}
 #'   
 #'   \itemize{ \item{fviz_pca_ind(): Graph of individuals} \item{fviz_pca_var():
@@ -119,21 +119,21 @@
 #'    # using the "cos2" or the contributions "contrib"
 #'    # cos2 = the quality of the individuals on the factor map
 #' # 2. To keep only point or text use geom = "point" or geom = "text".
-#' # 3. Change themes using ggtheme: http://www.sthda.com/english/wiki/ggplot2-themes
+#' # 3. Change themes using ggtheme: https://www.sthda.com/english/wiki/ggplot2-themes
 #' 
 #' fviz_pca_ind(res.pca, col.ind="cos2", geom = "point",
 #'    gradient.cols = c("white", "#2E9FDF", "#FC4E07" ))
 #' 
 #' # Color individuals by groups, add concentration ellipses
 #' # Change group colors using RColorBrewer color palettes
-#' # Read more: http://www.sthda.com/english/wiki/ggplot2-colors
+#' # Read more: https://www.sthda.com/english/wiki/ggplot2-colors
 #' # Remove labels: label = "none".
 #' fviz_pca_ind(res.pca, label="none", habillage=iris$Species,
 #'      addEllipses=TRUE, ellipse.level=0.95, palette = "Dark2")
 #'              
 #'      
 #' # Change group colors manually
-#' # Read more: http://www.sthda.com/english/wiki/ggplot2-colors
+#' # Read more: https://www.sthda.com/english/wiki/ggplot2-colors
 #' fviz_pca_ind(res.pca, label="none", habillage=iris$Species,
 #'      addEllipses=TRUE, ellipse.level=0.95,
 #'      palette = c("#999999", "#E69F00", "#56B4E9"))

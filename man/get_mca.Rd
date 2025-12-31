@@ -68,7 +68,7 @@ res.mca <- MCA(poison.active, graph=FALSE)
  
 }
 \references{
-http://www.sthda.com/english/
+https://www.sthda.com/english/
 }
 \author{
 Alboukadel Kassambara \email{alboukadel.kassambara@gmail.com}

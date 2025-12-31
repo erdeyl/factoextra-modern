@@ -12,7 +12,7 @@
 #'   (?cluster::clustGap).} }
 #'   
 #'   Read more: 
-#'   \href{http://www.sthda.com/english/wiki/determining-the-optimal-number-of-clusters-3-must-known-methods-unsupervised-machine-learning}{Determining
+#'   \href{https://www.sthda.com/english/wiki/determining-the-optimal-number-of-clusters-3-must-known-methods-unsupervised-machine-learning}{Determining
 #'    the optimal number of clusters}
 #'   
 #' @param x numeric matrix or data frame. In the function fviz_nbclust(), x can 

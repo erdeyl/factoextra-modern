@@ -145,7 +145,7 @@ fviz_eig(res.mca, linecolor = "#FC4E07",
 
 }
 \references{
-http://www.sthda.com/english/
+https://www.sthda.com/english/
 }
 \seealso{
 \code{\link{fviz_pca}}, \code{\link{fviz_ca}},

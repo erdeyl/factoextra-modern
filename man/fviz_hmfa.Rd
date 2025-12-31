@@ -187,7 +187,7 @@ fviz_hmfa_ind(res.hmfa, partial = "all", palette = "Dark2")
 
 }
 \references{
-http://www.sthda.com/english/
+https://www.sthda.com/english/
 }
 \author{
 Fabian Mundt \email{f.mundt@inventionate.de}

@@ -95,7 +95,7 @@ Partitioning methods, such as k-means clustering require the
   (?cluster::clustGap).} }
   
   Read more: 
-  \href{http://www.sthda.com/english/wiki/determining-the-optimal-number-of-clusters-3-must-known-methods-unsupervised-machine-learning}{Determining
+  \href{https://www.sthda.com/english/wiki/determining-the-optimal-number-of-clusters-3-must-known-methods-unsupervised-machine-learning}{Determining
    the optimal number of clusters}
 }
 \section{Method selection for gap statistic}{

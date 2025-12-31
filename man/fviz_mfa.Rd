@@ -213,7 +213,7 @@ fviz_mfa_quali_biplot(res.mfa, repel = FALSE, col.var = "#E7B800",
 
 }
 \references{
-http://www.sthda.com/english/
+https://www.sthda.com/english/
 }
 \author{
 Fabian Mundt \email{f.mundt@inventionate.de}

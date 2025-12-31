@@ -7,7 +7,7 @@ NULL
 #'  fviz_mca() provides ggplot2-based elegant visualization of MCA outputs from 
 #'  the R functions: MCA [in FactoMineR], acm [in ade4], and expOutput/epMCA [in
 #'  ExPosition]. Read more: 
-#'  \href{http://www.sthda.com/english/wiki/multiple-correspondence-analysis-essentials-interpretation-and-application-to-investigate-the-associations-between-categories-of-multiple-qualitative-variables-r-software-and-data-mining}{Multiple
+#'  \href{https://www.sthda.com/english/wiki/multiple-correspondence-analysis-essentials-interpretation-and-application-to-investigate-the-associations-between-categories-of-multiple-qualitative-variables-r-software-and-data-mining}{Multiple
 #'   Correspondence Analysis Essentials.}
 #'  
 #'  \itemize{ \item{fviz_mca_ind(): Graph of individuals} \item{fviz_mca_var(): 
@@ -112,7 +112,7 @@ NULL
 #'    # using the "cos2" or the contributions "contrib"
 #'    # cos2 = the quality of the individuals on the factor map
 #' # 2. To keep only point or text use geom = "point" or geom = "text".
-#' # 3. Change themes: http://www.sthda.com/english/wiki/ggplot2-themes
+#' # 3. Change themes: https://www.sthda.com/english/wiki/ggplot2-themes
 #' 
 #' fviz_mca_ind(res.mca, col.ind = "cos2", repel = TRUE)
 #'
@@ -131,12 +131,12 @@ NULL
 #'       
 #'     
 #' # Change group colors using RColorBrewer color palettes
-#' # Read more: http://www.sthda.com/english/wiki/ggplot2-colors
+#' # Read more: https://www.sthda.com/english/wiki/ggplot2-colors
 #' p + scale_color_brewer(palette="Dark2") +
 #'     scale_fill_brewer(palette="Dark2") 
 #'      
 #' # Change group colors manually
-#' # Read more: http://www.sthda.com/english/wiki/ggplot2-colors
+#' # Read more: https://www.sthda.com/english/wiki/ggplot2-colors
 #' p + scale_color_manual(values=c("#999999", "#E69F00"))+
 #'  scale_fill_manual(values=c("#999999", "#E69F00"))
 #'              
