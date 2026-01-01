@@ -24,7 +24,8 @@
 #'  values are the combination of c("point", "text"). Use "point" (to show only
 #'  points);  "text" to show only labels; c("point", "text") to show both types.
 #'@param repel a boolean, whether to use ggrepel to avoid overplotting text
-#'  labels or not.
+#'  labels or not. The old \code{jitter} argument is kept for backward
+#'  compatibility and is silently converted to \code{repel = TRUE}.
 #'@param show.clust.cent logical; if TRUE, shows cluster centers
 #'@param ellipse logical value; if TRUE, draws outline around points of each
 #'  cluster
@@ -119,21 +120,21 @@ fviz_cluster <- function(object, data = NULL, choose.vars = NULL, stand = TRUE,
                          outlier.pointsize = pointsize, outlier.labelsize = labelsize,
                          ggtheme = theme_grey(), ...){
   
-  # Deprecated arguments
+  # Backward compatibility: deprecated arguments silently converted
   extra_args <- list(...)
   .check_axes(axes, .length = 2)
-  
+
+  # jitter -> repel (silent conversion)
   if (!is.null(extra_args$jitter)) {
-    warning("argument jitter is deprecated; please use repel = TRUE instead, to avoid overlapping of labels.", 
-            call. = FALSE)
     if(!is.null(extra_args$jitter$width) | !is.null(extra_args$jitter$height) ) repel = TRUE
   }
-  
-  if(!is.null(extra_args$frame)) ellipse <- .facto_dep("frame", "ellipse", ellipse)
-  if(!is.null(extra_args$frame.type)) ellipse.type <- .facto_dep("frame.type", "ellipse.type", extra_args$frame.type)
-  if(!is.null(extra_args$frame.level)) ellipse.level <- .facto_dep("frame.level", "ellipse.level", extra_args$frame.level)
-  if(!is.null(extra_args$frame.alpha)) ellipse.alpha <- .facto_dep("frame.alpha", "ellipse.alpha", extra_args$frame.alpha)
-  if(!is.null(extra_args$title)) main <- .facto_dep("title", "main", extra_args$title)
+
+  # frame -> ellipse (silent conversion)
+  if(!is.null(extra_args$frame)) ellipse <- extra_args$frame
+  if(!is.null(extra_args$frame.type)) ellipse.type <- extra_args$frame.type
+  if(!is.null(extra_args$frame.level)) ellipse.level <- extra_args$frame.level
+  if(!is.null(extra_args$frame.alpha)) ellipse.alpha <- extra_args$frame.alpha
+  if(!is.null(extra_args$title)) main <- extra_args$title
   
   
   # object from cluster package

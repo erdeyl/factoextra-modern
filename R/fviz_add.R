@@ -14,8 +14,9 @@
 #' @param pointsize the size of points
 #' @param shape point shape when geom ="point"
 #' @param linetype the linetype to be used when geom ="arrow"
-#' @param repel a boolean, whether to use ggrepel to avoid overplotting text 
-#'   labels or not.
+#' @param repel a boolean, whether to use ggrepel to avoid overplotting text
+#'   labels or not. The old \code{jitter} argument is kept for backward
+#'   compatibility and is silently converted to \code{repel = TRUE}.
 #' @param font.family character vector specifying font family.
 #' @param ... Additional arguments, not used
 #' @return a ggplot2 plot
@@ -44,11 +45,10 @@ fviz_add <- function(ggp, df, axes = c(1,2), geom=c("point", "arrow"), color ="b
                      addlabel = TRUE, labelsize = 4, pointsize = 2, shape=19, linetype ="dashed",
                      repel = FALSE, font.family = "", ...)
 {
-  # Deprecated arguments
+  # Backward compatibility: jitter argument silently converted to repel
+
   extra_args <- list(...)
   if (!is.null(extra_args$jitter)) {
-    warning("argument jitter is deprecated; please use repel = TRUE instead, to avoid overlapping of labels.", 
-            call. = FALSE)
     if(!is.null(extra_args$jitter$width) | !is.null(extra_args$jitter$height) ) repel = TRUE
   }
   
