@@ -2,6 +2,7 @@
 
 S3method(print,factoextra)
 S3method(print,hkmeans)
+export(clean_lock_files)
 export(eclust)
 export(facto_summarize)
 export(fviz)
