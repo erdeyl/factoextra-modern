@@ -141,14 +141,18 @@ fviz_nbclust <- function (x, FUNcluster = NULL, method = c("silhouette", "wss", 
       df <- data.frame(clusters = as.factor(1:k.max), y = v, stringsAsFactors = TRUE)
       
       ylab <- "Total Within Sum of Square"
-      if(method == "silhouette") ylab <- "Average silhouette width"
-      
+      main_title <- "Optimal number of clusters"
+      if(method == "silhouette") {
+        ylab <- "Average silhouette width"
+        main_title <- "Optimal number of clusters (method = \"silhouette\")"
+      }
+
       p <- ggpubrplus::ggline(df, x = "clusters", y = "y", group = 1,
                           color = linecolor, ylab = ylab,
                           xlab = "Number of clusters k",
-                          main = "Optimal number of clusters"
+                          main = main_title
                           )
-      if(method == "silhouette") 
+      if(method == "silhouette")
         p <- p + geom_vline(xintercept = which.max(v), linetype=2, color = linecolor)
       
       return(p) 
@@ -223,7 +227,7 @@ fviz_gap_stat <- function(gap_stat,  linecolor = "steelblue",
     ggplot2::geom_errorbar(aes(ymin = .data[["ymin"]], ymax = .data[["ymax"]]), width=.2, color = linecolor)+
     geom_vline(xintercept = k, linetype=2, color = linecolor)+
     labs(y = "Gap statistic (k)", x = "Number of clusters k",
-         title = "Optimal number of clusters")
+         title = "Optimal number of clusters (method = \"gap_stat\")")
   p
 }
 

@@ -8,8 +8,9 @@
 #' General resources:
 #'
 #'\itemize{
-#' \item \href{https://github.com/erdeyl/factoextra-modern}{factoextraplus documentation}
+#' \item \href{https://github.com/erdeyl/factoextraplus}{factoextraplus documentation}
 #' \item \href{https://rpkgs.datanovia.com/factoextra/}{Original factoextra documentation}
 #'}
 #'
+#' @import ggpubrplus FactoMineR
 "_PACKAGE"

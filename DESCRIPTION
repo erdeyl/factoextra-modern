@@ -24,16 +24,16 @@ LazyDataCompression: xz
 Encoding: UTF-8
 Depends:
     R (>= 4.1.0),
-    ggplot2 (>= 3.5.2)
-Imports:
-    cluster,
-    dendextend,
-    FactoMineR,
+    ggplot2 (>= 3.5.2),
     ggpubrplus (>= 0.7.0),
+    FactoMineR (>= 2.0)
+Imports:
+    cluster (>= 2.1.0),
+    dendextend (>= 1.15.0),
     grid,
-    rlang,
+    rlang (>= 1.0.0),
     stats,
-    ggrepel
+    ggrepel (>= 0.9.0)
 Remotes:
     erdeyl/ggpubrplus
 Suggests:
