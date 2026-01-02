@@ -144,8 +144,9 @@ contrib are drawn }}
 
 \item{axes.linetype}{linetype of x and y axes.}
 
-\item{repel}{a boolean, whether to use ggrepel to avoid overplotting text 
-labels or not.}
+\item{repel}{a boolean, whether to use ggrepel to avoid overplotting text
+labels or not. The old \code{jitter} argument is kept for backward
+compatibility and is silently converted to \code{repel = TRUE}.}
 
 \item{col.circle}{a color for the correlation circle. Used only when X is a 
 PCA output.}

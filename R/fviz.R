@@ -22,8 +22,9 @@ NULL
 #'@param pointshape the shape of points
 #'@param arrowsize the size of arrows. Controls the thickness of arrows.
 #'@param title the title of the graph
-#'@param repel a boolean, whether to use ggrepel to avoid overplotting text 
-#'  labels or not.
+#'@param repel a boolean, whether to use ggrepel to avoid overplotting text
+#'  labels or not. The old \code{jitter} argument is kept for backward
+#'  compatibility and is silently converted to \code{repel = TRUE}.
 #'@param habillage an optional factor variable for coloring the observations by 
 #'  groups. Default value is "none". If X is a PCA object from FactoMineR 
 #'  package, habillage can also specify the supplementary qualitative variable 
@@ -141,9 +142,9 @@ fviz <- function(X, element, axes = c(1, 2), geom = "auto",
   .check_axes(axes, .length = 2)
   facto.class <- .get_facto_class(X)
     
-  # Deprecated arguments: jitter
+  # Backward compatibility: jitter argument silently converted to repel
   extra_args <- list(...)
-  if(!is.null(extra_args$jitter)) repel <- .facto_dep("jitter", "repel", TRUE)
+  if(!is.null(extra_args$jitter)) repel <- TRUE
   # Elements to be labelled or hidden
   lab <- .label(label)
   hide <- .hide(invisible)

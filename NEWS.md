@@ -86,6 +86,9 @@ This version addresses the following **30 issues** from the original factoextra 
 * Fixed fviz_nbclust() silhouette error when k >= n (Issues #113, #147)
 * Fixed fviz_ca_col() parameter name typo (Issue #150)
 * Fixed Hopkins statistic formula (Wright 2022)
+* Fixed 'Ignoring empty aesthetic: width' warning in fviz_eig()
+* Replaced deprecated `jitter` argument with `repel` in visualization functions,
+  maintaining backward compatibility with deprecation warning
 
 ## New Features
 

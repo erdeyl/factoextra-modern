@@ -48,8 +48,9 @@ NULL
 #'  for the arguments col.col and col.row.
 #'@param col.col.sup,col.row.sup colors for the supplementary column and row 
 #'  points, respectively.
-#'@param repel a boolean, whether to use ggrepel to avoid overplotting text 
-#'  labels or not.
+#'@param repel a boolean, whether to use ggrepel to avoid overplotting text
+#'  labels or not. The old \code{jitter} argument is kept for backward
+#'  compatibility and is silently converted to \code{repel = TRUE}.
 #'@param select.col,select.row a selection of columns/rows to be drawn. Allowed 
 #'  values are NULL or a list containing the arguments name, cos2 or contrib: 
 #'  \itemize{ \item name is a character vector containing column/row names to be
